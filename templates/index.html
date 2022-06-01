@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}} - My To-Buy List</title>
-    
-</head>
-<body>
-    <h2>
-        My To-Buy List
-    </h2> 
-    {% for order in orders%}
-    <div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <title>{{title}} - My Orders</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Orders</h1>
+      {% for order in orders%}
+      <div>
         <p>
-            {{order.name}}: <a href="orders/{{orders.index(order)}}">more details</a>
+          {{order.name}}:
+          <a href="orders/{{orders.index(order)}}">Click for Order Details</a>
         </p>
+      </div>
+      {% endfor%}
     </div>
- 
-    {% endfor%}
-    
-</body>
+  </body>
 </html>

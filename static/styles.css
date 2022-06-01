@@ -1,0 +1,40 @@
+body {
+  background: linear-gradient(
+    68.6deg,
+    rgb(252, 165, 241) 1.8%,
+    rgb(181, 255, 255) 100.5%
+  );
+  background-attachment: fixed;
+}
+
+.container {
+  background-color: pink;
+  border-color: #383e58;
+  border-radius: 10px;
+  display: block;
+  margin: 30px auto;
+  margin-top: 50px;
+  padding: 30px 60px;
+  color: #383e58;
+  max-width: 650px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0.85;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
