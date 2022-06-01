@@ -1,29 +1,25 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>{{title}} - My To-Buy List</title>
- </head>
-
-
- 
- <body>
-    <h2>
-        <h2>
-            more_details
-        </h2> 
-        
-        <div>
-            <p>
-                {{order.name}}: <b>{{order.date}}</b> <b>{{order.quantity}}</b> <b>{{order.food}}</b>
-            </p>
-        </div>
-     
-        
-    </h2>
- </body>
- </html>    
-     
-     
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <title>{{title}} - My To-Buy List</title>
+  </head>
+  <body>
+      <div class="order-container">
+      <h2>{{order.name}}'s Order:</h2>
+        <p>
+          <ul>
+              <li>Date Ordered: <b>{{order.date}}</b></li>
+              <li>Food Ordered: <b>{{order.food}}</b></li>
+              <li>Quantity: <b>{{order.quantity}}</b></li>
+          </ul>
+        </p>
+      </div>
+  </body>
+</html>

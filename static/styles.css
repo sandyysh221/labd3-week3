@@ -33,8 +33,27 @@ p {
 
 a {
   text-decoration: none;
+  color: #0c5494;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+.order-container {
+  background-color: pink;
+  border-color: #383e58;
+  border-radius: 10px;
+  display: block;
+  margin: 30px auto;
+  margin-top: 50px;
+  padding: 30px 60px;
+  color: #383e58;
+  max-width: 450px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0.85;
+}
+
+li {
+  font-size: 1.5rem;
 }
